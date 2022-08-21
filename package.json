@@ -66,5 +66,11 @@
       "json",
       "node"
     ]
+  },
+  "resolutions": {
+    "@types/react": "^18",
+    "@react-native-community/cli": "^7.0.3",
+    "@react-native-community/cli-platform-android": "^7.0.1",
+    "@react-native-community/cli-platform-ios": "^7.0.1"
   }
 }
