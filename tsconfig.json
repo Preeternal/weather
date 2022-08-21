@@ -5,6 +5,20 @@
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
     /* Completeness */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+    "baseUrl": "./",
+    "paths": {
+      "@screens/*": ["src/screens/*/index", "src/screens/*", "src/screens/index"],
+      "@theme/*": ["src/theme/*/index", "src/theme/*", "src/theme/index"],
+      "@components/*": ["src/components/*/index", "src/components/*", "src/components/index"],
+      "@images": ["src/assets/images/index"],
+      "@hooks": ["src/hooks/index"],
+      "@services/*": ["src/services/*", "src/services/helpers"],
+      "@navigation/*": ["src/navigation/*/index", "src/navigation/*", "src/navigation/index"],
+      "@config": ["src/config/index"],
+      "@state/*": ["src/state/*/index", "src/state/*", "src/state/index"]    
+    },
+    "skipLibCheck": false,                                 /* Skip type checking all .d.ts files. */
+    "resolveJsonModule": true,
+    "suppressImplicitAnyIndexErrors": true
   }
 }
